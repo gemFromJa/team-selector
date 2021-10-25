@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="app.css" />
+        <title>Create your Team</title>
+    </head>
+    <body>
+        <script src="./field.js" defer></script>
+        <script src="./app.js" defer></script>
+        <div class="pg-container">
+            <div class="page" id="page-1">
+                <h4 class="title">Add Players</h4>
+                <div class="filters">
+                    <!-- <label>
+                    <input id="use-simple-editor" type="checkbox" />
+                    text editor
+                </label>-->
+                    <!-- <label>by skill<input type="checkbox" /></label>
+                <label for="">by fitness<input type="checkbox" /></label>
+                <label for="">by size<input type="checkbox" /></label> -->
+                    <!-- <div class="total-container">
+                    <label>total players</label>
+                    <div>
+                        <button class="total-control decrease">-</button>
+                        <input type="text" id="total-players" />
+                        <button class="total-control increase">+</button>
+                    </div>
+                </div> -->
+                </div>
+                <div class="team_names">
+                    <label for="" class="team_input_label team1_name">
+                        <span class="input_label_margin_btm"> First Team </span>
+                        <input
+                            type="text"
+                            id="team_1"
+                            class="team_input"
+                            value="team 1"
+                            placeholder="team 1"
+                        />
+                    </label>
+                    <label for="" class="team_input_label team2_name">
+                        <span class="input_label_margin_btm"> Second Team</span>
+                        <input
+                            type="text"
+                            id="team_2"
+                            class="team_input"
+                            value="team 2"
+                            placeholder="team 2"
+                        />
+                    </label>
+                </div>
+                <!-- <div class="player-header">
+                <div>Name</div>
+                <div>Skill</div>
+                <div>Fitness</div>
+                <div>Size</div>
+            </div> -->
+                <label class="input_label_margin_btm pl_label"
+                    >Players
+                    <small class="input-instructions"
+                        >(name, skill, fitness, size)</small
+                    ></label
+                >
+                <div id="players"></div>
+                <button id="generate-button">Generate</button>
+            </div>
+            <div class="page" id="page-2">
+                <h4 class="title">Generated Team</h4>
+                <div class="team1"></div>
+                <div class="team2"></div>
+                <!-- <table id="player-teams-table">
+                <thead>
+                    <th>Red Team</th>
+                    <th>Blue Team</th>
+                </thead>
+                <tbody></tbody>
+            </table> -->
+                <div class="field">
+                    <div class="field_fl">
+                        <!-- First halg of field -->
+
+                        <div class="field_h field_t1_half field_1p_b">
+                            <div class="team_info">
+                                <div class="color red"></div>
+                                <p class="team_name">Team 1</p>
+                            </div>
+                            <div class="field_actual">
+                                <div class="field_pn_box field_1p_b"></div>
+                                <div class="field_pn_6y field_1p_b"></div>
+                                <div class="field_pn_d field_1p_b"></div>
+                                <div class="field_half_d field_1p_b"></div>
+                                <span class="team1_players"></span>
+                            </div>
+                        </div>
+                        <!-- Second Half of field -->
+                        <div class="field_h field_t2_half field_1p_b">
+                            <div class="field_actual">
+                                <div class="field_pn_box field_2p_b"></div>
+                                <div class="field_pn_6y field_2p_b"></div>
+                                <div class="field_pn_d field_2p_b"></div>
+                                <div class="field_half_d field_2p_b"></div>
+
+                                <span class="team2_players">
+                                    <!-- <div class="field_row">
+                                    <div class="child_container">
+                                        <div class="fl_player">
+                                            <div class="circle">
+                                                <span class="number">1</span>
+                                            </div>
+                                            <div class="name">t.montana</div>
+                                        </div>
+                                        <div class="fl_player">
+                                            <div class="circle">
+                                                <span class="number">1</span>
+                                            </div>
+                                            <div class="name">t.montana</div>
+                                        </div>
+                                        <div class="fl_player">
+                                            <div class="circle">
+                                                <span class="number">1</span>
+                                            </div>
+                                            <div class="name">t.montana</div>
+                                        </div>
+                                        <div class="fl_player">
+                                            <div class="circle">
+                                                <span class="number">1</span>
+                                            </div>
+                                            <div class="name">t.montana</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field_row">
+                                    <div class="child_container">
+                                        <div class="fl_player">
+                                            <div class="circle">
+                                                <span class="number">1</span>
+                                            </div>
+                                            <div class="name">t.montana</div>
+                                        </div>
+                                        <div class="fl_player">
+                                            <div class="circle">
+                                                <span class="number">1</span>
+                                            </div>
+                                            <div class="name">t.montana</div>
+                                        </div>
+                                        <div class="fl_player">
+                                            <div class="circle">
+                                                <span class="number">1</span>
+                                            </div>
+                                            <div class="name">t.montana</div>
+                                        </div>
+                                        <div class="fl_player">
+                                            <div class="circle">
+                                                <span class="number">1</span>
+                                            </div>
+                                            <div class="name">t.montana</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field_row">
+                                    <div class="child_container">
+                                        <div class="fl_player">
+                                            <div class="circle">
+                                                <span class="number">1</span>
+                                            </div>
+                                            <div class="name">t.montana</div>
+                                        </div>
+                                        <div class="fl_player">
+                                            <div class="circle">
+                                                <span class="number">1</span>
+                                            </div>
+                                            <div class="name">t.montana</div>
+                                        </div>
+                                        <div class="fl_player">
+                                            <div class="circle">
+                                                <span class="number">1</span>
+                                            </div>
+                                            <div class="name">t.montana</div>
+                                        </div>
+                                        <div class="fl_player">
+                                            <div class="circle">
+                                                <span class="number">1</span>
+                                            </div>
+                                            <div class="name">t.montana</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field_row">
+                                    <div class="child_container">
+                                        <div class="fl_player">
+                                            <div class="circle">
+                                                <span class="number">1</span>
+                                            </div>
+                                            <div class="name">t.montana</div>
+                                        </div>
+                                        <div class="fl_player">
+                                            <div class="circle">
+                                                <span class="number">1</span>
+                                            </div>
+                                            <div class="name">t.montana</div>
+                                        </div>
+                                        <div class="fl_player">
+                                            <div class="circle">
+                                                <span class="number">1</span>
+                                            </div>
+                                            <div class="name">t.montana</div>
+                                        </div>
+                                        <div class="fl_player">
+                                            <div class="circle">
+                                                <span class="number">1</span>
+                                            </div>
+                                            <div class="name">t.montana</div>
+                                        </div>
+                                    </div>
+                                </div> -->
+                                </span>
+                            </div>
+                            <div class="team_info">
+                                <div class="color blue"></div>
+                                <p class="team_name">Team 2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
