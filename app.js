@@ -312,12 +312,12 @@ function createTeam() {
 
 	/** the output labels */
 	let team1_name_label = document.querySelector(".field_t1_half .team_name");
-	team1_name_label.innerHTML = team1_name_input.value;
+	team1_name_label.innerHTML = team1_name_input.value || "Team 1";
 	let team2_name_label = document.querySelector(".field_t2_half .team_name");
-	team2_name_label.innerHTML = team2_name_input.value;
+	team2_name_label.innerHTML = team2_name_input.value || "Team 2";
 
-	let redt = `<b>${team1_name_input.value || "team1"}</b>:`,
-		bluet = `<b>${team2_name_input.value || "team2"}</b>:`;
+	let redt = `<b>${team1_name_input.value || "Team 1"}</b>:`,
+		bluet = `<b>${team2_name_input.value || "Team 2"}</b>:`;
 
 	for (let i = 0; i < Math.round(total_players / 2); i++) {
 		if (team1[i]) {
